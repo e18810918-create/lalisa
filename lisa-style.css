@@ -1,0 +1,118 @@
+body {
+    background-color: #0d0d0d;
+    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ЗАСТАВКА С КОЛЛАЖЕМ */
+.hero-section {
+    padding: 40px 20px;
+    text-align: center;
+    background: radial-gradient(circle, #2a0818 0%, #0d0d0d 100%);
+    overflow: hidden;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    color: #ff007f;
+    letter-spacing: 5px;
+    text-shadow: 0 0 20px #ff007f, 0 0 40px #ff66b2;
+    margin-bottom: 5px;
+}
+
+.hero-subtitle {
+    color: #aaa;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+/* Сетка Коллажа */
+.collage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px 0;
+}
+
+.collage-img {
+    width: 160px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #ff66b2;
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Поворачиваем и сдвигаем фото */
+.img-1 { transform: translateY(-20px) rotate(-6deg); }
+.img-2 { transform: translateY(15px) rotate(3deg); }
+.img-3 { transform: translateY(-30px) scale(1.1) rotate(-2deg); z-index: 2; border-color: #fff; }
+.img-4 { transform: translateY(20px) rotate(5deg); }
+.img-5 { transform: translateY(-10px) rotate(-4deg); }
+
+.collage-img:hover {
+    transform: scale(1.15) rotate(0deg);
+    z-index: 10;
+    box-shadow: 0 0 25px #ff007f;
+}
+
+/* СЕКЦИЯ БИОГРАФИИ */
+.bio-section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.bio-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: #161616;
+    padding: 30px;
+    border-radius: 20px;
+    border-left: 5px solid #ff007f;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.bio-text {
+    flex: 2;
+}
+
+.bio-text h2 {
+    color: #ff66b2;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.bio-text p {
+    line-height: 1.6;
+    color: #ddd;
+    font-size: 1.05rem;
+}
+
+.bio-photo {
+    flex: 1;
+}
+
+.bio-photo img {
+    width: 100%;
+    border-radius: 15px;
+    border: 2px solid #ff007f;
+}
+
+@media (max-width: 768px) {
+    .collage-container {
+        flex-wrap: wrap;
+    }
+    .bio-container {
+        flex-direction: column;
+    }
+}
