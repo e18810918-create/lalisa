@@ -16,9 +16,9 @@ body {
 
 .hero-title {
     font-size: 3.5rem;
-    color: #ff007f;
+    color: #55bcec;
     letter-spacing: 5px;
-    text-shadow: 0 0 20px #ff007f, 0 0 40px #ff66b2;
+    text-shadow: 0 0 20px #416c92, 0 0 40px #3c609b;
     margin-bottom: 5px;
 }
 
@@ -46,8 +46,8 @@ body {
     height: 220px;
     object-fit: cover;
     border-radius: 12px;
-    border: 2px solid #ff66b2;
-    box-shadow: 0 0 15px rgba(255, 0, 127, 0.4);
+    border: 2px solid #e698ec;
+    box-shadow: 0 0 15px rgba(239, 145, 192, 0.4);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -61,7 +61,7 @@ body {
 .col-item img:hover {
     transform: scale(1.15) rotate(0deg);
     z-index: 10;
-    box-shadow: 0 0 25px #ff007f;
+    box-shadow: 0 0 25px #c26091;
 }
 
 /* СЕКЦИЯ БИОГРАФИИ */
@@ -78,7 +78,7 @@ body {
     background: #161616;
     padding: 30px;
     border-radius: 20px;
-    border-left: 5px solid #ff007f;
+    border-left: 5px solid #5e8da6;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
@@ -87,7 +87,7 @@ body {
 }
 
 .bio-text h2 {
-    color: #ff66b2;
+    color: #7d9ecc;
     font-size: 2rem;
     margin-top: 0;
 }
@@ -105,7 +105,7 @@ body {
 .bio-photo img {
     width: 100%;
     border-radius: 15px;
-    border: 2px solid #ff007f;
+    border: 2px solid #47869a;
 }
 
 @media (max-width: 768px) {
